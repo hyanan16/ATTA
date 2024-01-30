@@ -1,0 +1,14 @@
+includes:
+  - base.yaml
+atta:
+  name: TAL
+  episodic: False
+  budgets: 100
+  TAL:
+    steps: 3000
+    lr: 1e-3
+    e0: 0.2
+
+num_workers: 8
+
+

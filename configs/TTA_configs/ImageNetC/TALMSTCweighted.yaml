@@ -1,0 +1,16 @@
+includes:
+  - base.yaml
+atta:
+  name: TALMSTCweighted
+  episodic: False
+  budgets: 100
+  SimATTA:
+    steps: 20
+    lr: 1e-3
+    eh: 0.2
+    el: 1e-3
+    cold_start: 10
+
+num_workers: 8
+
+

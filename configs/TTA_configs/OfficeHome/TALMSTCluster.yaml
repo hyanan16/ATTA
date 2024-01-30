@@ -1,0 +1,25 @@
+includes:
+  - base.yaml
+atta:
+  name: TALMSTCluster
+  episodic: False
+  budgets: 100
+  SimATTA:
+    steps: 10
+    lr: 1e-3
+    eh: 0.2
+    el: 1e-3
+    cold_start: 10
+
+train:
+  max_epoch: 30
+  lr: 3e-5
+  mile_stones: [ 300 ]
+  gamma: 0.1
+  log_interval: 100
+  val_bs: 256
+  test_bs: 16
+  max_iters: 3000
+num_workers: 8
+
+

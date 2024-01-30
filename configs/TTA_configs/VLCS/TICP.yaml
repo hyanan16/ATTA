@@ -1,0 +1,19 @@
+includes:
+  - base.yaml
+tta:
+  name: TICP
+  episodic: False
+  TICP:
+    num_drops: 50
+    classifier_epochs: 300
+    classifier_lr: 1e-2
+    num_gaussians: 3
+    alpha: 1e-2  # may be 1e-5 ~ 5e-4
+    beta: 1e-2
+    steps: 1
+    temperature: 1.
+    train_or_load: train
+    dim_hidden: 50
+dropout_rate: 0num_workers: 8
+
+
